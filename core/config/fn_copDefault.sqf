@@ -1,0 +1,50 @@
+/*
+	File: fn_copDefault.sqf
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	Default cop configuration.
+*/
+//Strip the player down
+RemoveAllWeapons player;
+{player removeMagazine _x;} foreach (magazines player);
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeGoggles player;
+removeHeadGear player;
+{
+	player unassignItem _x;
+	player removeItem _x;
+} foreach (assignedItems player);
+
+//Load player with default cop gear.
+player addUniform "U_Rangemaster";
+player setObjectTextureGlobal [0,"cop.jpg"];
+player addVest "V_Rangemaster_belt";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
+player addWeapon "hgun_P07_snds_F";
+player addItem "ItemMap";
+player assignItem "ItemMap";
+player addItem "ItemCompass";
+player assignItem "ItemCompass";
+
+uniform_1 addAction ["Uniforme Policier","policier.sqf"];
+uniform_1 addAction ["Uniforme Ambulancier","ambulancier.sqf"];
+uniform_2 addAction ["Uniforme Policier","policier.sqf"];
+uniform_2 addAction ["Uniforme Ambulancier","ambulancier.sqf"];
+uniform_3 addAction ["Uniforme Policier","policier.sqf"];
+uniform_3 addAction ["Uniforme Ambulancier","ambulancier.sqf"];
+uniform_4 addAction ["Uniforme Policier","policier.sqf"];
+uniform_4 addAction ["Uniforme Ambulancier","ambulancier.sqf"];
+patrolcop addAction ["Stop patrol mission","patrolmission\removepatrol.sqf"];
+patrolcop addAction ["Get patrol mission","patrolmission\startpatrol.sqf"];
+patrolcop_1 addAction ["Stop patrol mission","patrolmission\removepatrol.sqf"];
+patrolcop_1 addAction ["Get patrol mission","patrolmission\startpatrol.sqf"];
+
+[] call life_fnc_saveGear;

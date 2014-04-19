@@ -1,0 +1,11 @@
+player removeAction doingpatrol;
+life_cash = life_cash + patrolearn;
+hint format ["You've completed your patrol at point %1, You earned %2!",patrolrnumber,patrolearn];
+deleteMarkerLocal "patrolmarker";
+patrolmission = 0;
+patrolearn = 0;
+patrolnumber = 0;
+sleep 2;
+patrolmission = 0;
+deleteMarkerLocal "patrolmarker";
+hint "Report back to base for more Patrol points";

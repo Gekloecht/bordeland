@@ -1,16 +1,16 @@
 /*
-    File: fn_weed.sqf
-    Author: Kuchiha,Gek 
-	screen : http://image.noelshack.com/fichiers/2014/16/1397924460-arma3-2014-04-19-18-19-38-17.jpg
+    File: fn_alcool.sqf
+    Author: Kuchiha,Gek
+	screen : http://image.noelshack.com/fichiers/2014/16/1397925486-arma3-2014-04-19-18-37-52-13.jpg
     Description:
-    Marijuana effects.
+    Alcohol effects.
 */
 
 //Close inventory
 closeDialog 0;
 
 //Little hint then wait a litle before starting drugs effects
-hint "La drogue c'est mal !";
+hint "L'alcool c'est mal !";
 sleep 3;
 
 //Activate ppEffects we need
@@ -22,11 +22,11 @@ enableCamShake true;
 //Let's go for 45secs of effetcs
 for "_i" from 0 to 44 do
 {
-	"chromAberration" ppEffectAdjust [0.1,0.1,true];
+	"chromAberration" ppEffectAdjust [0.05,0.05,true];
     "chromAberration" ppEffectCommit 1;
-    "ColorInversion" ppEffectAdjust [0.1,0,0.4];
+    "ColorInversion" ppEffectAdjust [0.1,0.1,0.1];
     "ColorInversion" ppEffectCommit 1;
-    "radialBlur" ppEffectAdjust  [0.1,0.1,0.15,0.15];
+    "radialBlur" ppEffectAdjust  [0.2,0.2,0.15,0.15];
     "radialBlur" ppEffectCommit 1;
     addcamShake[(random 4)+1, 1, (random 4)+1];
     sleep 1;

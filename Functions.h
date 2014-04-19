@@ -312,6 +312,10 @@ class Life_Client_Core
 		class spikeStrip {};
 		class jerryRefuel {};
 		class weed{};
+		class alcool{};
+		class heroine{};
+		class meth{};
+		class cocaine{};
 	};
 	
 	class Dialog_Controls

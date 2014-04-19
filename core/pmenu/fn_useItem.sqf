@@ -52,14 +52,6 @@ switch (true) do
 		};
 	};
 	
-	case (_item == "heroinp"):
-	{
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{
-			[] spawn fnc_drug_use;
-		};
-	};
-	
 	case (_item == "fuelF"):
 	{
 		if(vehicle player != player) exitWith {hint "You can't refuel the vehicle while in it!"};
@@ -68,10 +60,50 @@ switch (true) do
 	
 	case (_item == "marijuana"):
 	{
-    if(([false,_item,1] call life_fnc_handleInv)) then
-    {
-        [] spawn life_fnc_weed;
-    };
+		 if(([false,_item,1] call life_fnc_handleInv)) then
+		 {
+        		[] spawn life_fnc_weed;
+		 };
+	};
+	
+	case (_item == "heroinp"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] life_fnc_heroine;
+		};
+	};
+	
+	case (_item == "cocainep"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] life_fnc_cocaine;
+		};
+	};
+	
+	case (_item == "methp"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] life_fnc_meth;
+		};
+	};
+	
+	case (_item == "moonshine"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] life_fnc_alcool;
+		};
+	};
+	
+	case (_item == "vodka"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] life_fnc_alcool;
+		};
 	};
 	
 	case (_item == "lockpick"):

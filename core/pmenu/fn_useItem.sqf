@@ -66,7 +66,6 @@ switch (true) do
 		 };
 	};
 	
-	};
 	case (_item == "heroinp"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
@@ -74,7 +73,7 @@ switch (true) do
 			[] spawn life_fnc_heroine;
 		};
 	};
-/*
+
 	case (_item == "cocainep"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
@@ -106,7 +105,7 @@ switch (true) do
 			[] spawn life_fnc_alcool;
 		};
 	};
-*/	
+	
 	case (_item == "lockpick"):
 	{
 		[] spawn life_fnc_lockpick;

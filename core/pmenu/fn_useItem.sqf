@@ -62,23 +62,24 @@ switch (true) do
 	{
 		 if(([false,_item,1] call life_fnc_handleInv)) then
 		 {
-        		[] spawn life_fnc_weed;
+        	[] spawn life_fnc_weed;
 		 };
 	};
 	
+	};
 	case (_item == "heroinp"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[] life_fnc_heroine;
+			[] spawn life_fnc_heroine;
 		};
 	};
-	
+/*
 	case (_item == "cocainep"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[] life_fnc_cocaine;
+			[] spawn life_fnc_cocaine;
 		};
 	};
 	
@@ -86,7 +87,7 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[] life_fnc_meth;
+			[] spawn life_fnc_meth;
 		};
 	};
 	
@@ -94,7 +95,7 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[] life_fnc_alcool;
+			[] spawn life_fnc_alcool;
 		};
 	};
 	
@@ -102,10 +103,10 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[] life_fnc_alcool;
+			[] spawn life_fnc_alcool;
 		};
 	};
-	
+*/	
 	case (_item == "lockpick"):
 	{
 		[] spawn life_fnc_lockpick;

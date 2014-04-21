@@ -51,7 +51,9 @@ switch (_item) do
 	case "rock": {5};
 	case "cement": {4};
 	case "goldbar": {12};
-	case "methu": {6};
+	case "ephedrine": {3};
+	case "phosphore ": {3};
+	case "methu": {5};
 	case "methp": {4};
 	case "vodka": {4};
 	case "moonshine": {4};

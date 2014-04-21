@@ -68,6 +68,8 @@ switch (_mode) do
 			case "vodka": {"life_inv_vodka"};
 			case "grapes": {"life_inv_grapes"};
 			case "artefact": {"life_inv_artefact"};
+			case "ephedrine": {"life_inv_ephedrine"};
+			case "phosphore": {"life_inv_phosphore"};
 		};
 	};
 	
@@ -127,6 +129,8 @@ switch (_mode) do
 			case "life_inv_vodka": {"vodka"};
 			case "life_inv_grapes": {"grapes"};
 			case "life_inv_artefact": {"artefact"};
+			case "life_inv_ephedrine": {"ephedrine"};
+			case "life_inv_phosphore": {"phosphore"};
 		};
 	};
 };

@@ -158,7 +158,7 @@ switch (playerSide) do
 		!life_action_in_use && ((player distance (getMarkerPos "rock_1") < 150) OR (player distance (getMarkerPos "rock_2") < 150) OR (player distance (getMarkerPos "rock_3") < 150) OR (player distance (getMarkerPos "rock_4") < 150)) && (vehicle player == player) && (life_inv_pickaxe > 0) && (life_carryWeight + (["rock"] call life_fnc_itemWeight)) <= life_maxWeight ']];
 		
 		//Gather Meth
-		life_actions = life_actions + [player addAction["Recolter meth",life_fnc_gatherMeth,"",0,false,false,"",'
+		life_actions = life_actions + [player addAction["Recolter Ephedrine",life_fnc_gatherMeth,"",0,false,false,"",'
 		!life_action_in_use && (player distance (getMarkerPos "meth_area_1") < 150) && (vehicle player == player) && (life_carryWeight + (["methu"] call life_fnc_itemWeight)) <= life_maxWeight ']];
 		
 		//Gather Raisin

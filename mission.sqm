@@ -3737,7 +3737,7 @@ class Mission
 					vehicle="C_man_p_fugitive_F_euro";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Melange Ephedrine et Phosphore"",life_fnc_processAction,""methu"",0,false,false,"""",' life_inv_methu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_meth""] call life_fnc_varToStr,[([""methu""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""methu"",0,false,false,"""",' !license_civ_meth && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Melange Ephedrine et Phosphore"",life_fnc_processAction,""methu"",0,false,false,"""",' life_inv_ephedrine > 0 && life_inv_phosphore > 0 && !life_is_processing'];";
 				};
 			};
 		};
@@ -38882,9 +38882,9 @@ class Mission
 		};
 		class Item235
 		{
-			position[]={14247.635,5.0843539,13013.063};
+			position[]={14253.765,4.7116017,13017.275};
 			name="marker_process";
-			text="Traitement Methanphetamine";
+			text="Traitement Methanphetamine (Ephedrine + Phosphore)";
 			type="mil_dot";
 			colorName="Color1_FD_F";
 		};
